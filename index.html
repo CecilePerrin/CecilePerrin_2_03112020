@@ -3,69 +3,81 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet"> 
 		<title>Reservia</title>
 		<meta name="description" content="Site de reservation partout en France">
 	</head>
 	<body>
 		<!-- Header -->
 		<header>
-			<p>
-				<a href="reservialogo.png"><img src="images/logo/Reservia2.png" alt="Logo Reservia" /></a>
-			</p>
-			<div class= "navigation">
-				<ul>
-					<li>Hébergement</li>
-					<li>Activité</li>
-					<li>s'inscrire</li>
-				</ul>
-			</div>
-			<h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
-			<p>
-				En plein centre ville ou en pleine nature
-			</p>
-			<label for=""></label>
-			<input type = "search" placeholder="Paris,France" id= "Search">
-			<button type="submit">Rechercher</button>
-			<div class="Filtres">
+			
+			<a href="reservialogo.png"><img src="images/logo/Webp.net-resizeimage(2).png" alt="Logo Reservia" /></a>
+			
+			<ul class= "navigation">
+				<div id="menu">
+					<li>Hébergements</li>
+				</div>
+				<div id="menu">
+					<li>Activités</li>
+				</div>
+				<div id="menu">
+					<li>S'inscrire</li>
+				</div>
+			</ul>
+			<div class="container1">
+				<h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
 				<p>
-					Filtres
+					En plein centre ville ou en pleine nature
 				</p>
-				<button type="button">Economique</button>
-				<button type="button">Familliale</button>
-				<button type="button">Romantique</button>
-				<button type="button">Animaux autorisés</button>
+				<label for=""></label>
+				<input type = "search" placeholder="Paris,France" id= "Search">
+				<button type="submit">Rechercher</button>
+				<div class="Filtres">
+					<p>
+						Filtres
+					</p>
+					<button type="button">Economique</button>
+					<button type="button">Familliale</button>
+					<button type="button">Romantique</button><i class="fas fa-heart"></i>
+					<button type="button">Animaux autorisés</button>
+				</div>
+				<p>
+					Plus de 500 logements sont disponibles dans cette ville
+				</p>
 			</div>
-			<p>
-				Plus de 500 logements sont disponibles dans cette ville
-			</p>
 		</header>
 		<!-- Section 1 hebergement -->
 		<section id="hebergement">
-			<div>
+			<div class="container2">
 				<h1>Hébergements à Marseille</h1>
 			</div>
-			<div></div>
+			<div class="container3">
+				<h1>Les plus populaires</h1>
+			</div>
 		</section>
 		<!-- Section 2 activité -->
 		<section id="activite">
-			<div>
+			<div class="container4">
 				<h1>Activité à Marseille</h1>
 			</div>
 		</section>
 		<footer>
-			<h2>A propos</h2>
-			<ul>
+			
+			<ul class="information">
+				<li><h2>A propos</h2></li>
 				<li>fonctionnement du site</li>
 				<li>Conditions générales de vente</li>
 				<li>donnée et confidentialité</li>
 			</ul>
-			<h2>Nos hébergements</h2>
-			<ul>
+			
+			<ul class="information">
+				<li><h2>Nos hébergements</h2></li>
 				<li>Charte qualité</li>
 				<li>Soumettre votre hôtel</li>
 			</ul>
-			<h2>Assistance</h2>
-			<ul>
+			
+			<ul class="information">
+				<li><h2>Assistance</h2></li>
 				<li>Centre d'aide</li>
 				<li>Nous contacter</li>
 			</ul>

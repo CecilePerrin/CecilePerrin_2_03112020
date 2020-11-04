@@ -1,0 +1,144 @@
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**========================general======================== **/
+
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+ body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+ font-size: medium;
+ }
+
+p{
+ font-size: small;
+}
+
+ul{
+  list-style: none; 
+}
+
+h2{
+  font-size: medium;
+}
+
+/**========================header + menu========================**/
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  float: right;
+}
+
+
+#menu{
+  
+  margin-right: 60px; /**marge entre les bouttons de nav**/
+}
+
+.container1{
+  margin-right: 1%;
+  margin-left: 1%; 
+  padding-left: 10px;
+  min-width: 1000px;
+}
+.Filtres{
+ 
+  display: flex;
+}
+.Eco{
+
+}
+.Fam{
+
+} 
+.Anim{
+
+}
+.Rom{
+  
+}
+/**========================section 2 hébergement========================**/
+#hebergement{
+  display: flex;
+  
+}
+
+.container2{
+  background-color: #f2f2f2;
+  margin-right: 1%;
+  margin-left: 1%; 
+  padding-left: 10px;
+  width: 60%;
+  height: 400px;
+  margin-bottom: 50px;
+}
+.container3{
+  background-color: #f2f2f2;
+  margin-right: 1%;
+  margin-left: 1%; 
+  padding-left: 10px;
+  width: 20%;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+
+/**========================section 3 activité========================**/
+.container4{
+
+  margin-right: 1%;
+  margin-left: 1%; 
+  padding-left: 10px;
+  width: 90%;
+  height: 400px;
+  margin-bottom: 50px;
+
+}
+
+#activite{
+
+}
+
+/**========================Footer========================**/
+footer{
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative; /**bloquer le footer en bas de la page**/
+  bottom: 0px;
+  width:100%;
+
+}
+
+.information{
+
+  margin-right: 200px
+ 
+}
