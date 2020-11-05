@@ -1,52 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="utf-8" />
+		<title>Reservia</title>
+		<link rel="shortcut icon" href="Reservia.ico">
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet"> 
-		<title>Reservia</title>
+		<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Site de reservation partout en France">
+		<meta name="keywords" content="Hébergements,hôtel,Reservation">
+		<meta property="og:title" content="Reservia"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://www.CecilePerrin.github.io/"/>
+		<meta property="og:image" content="http://example.com/image.jpg"/>
+		<meta property="og:description" content="Site de reservation partout en France"/>
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="Reservia">
+		<meta name="twitter:description" content="Site de reservation partout en France">
+		<meta name="twitter:image" content="http://www.CecilePerrin.github.io">
+	
+	
 	</head>
 	<body>
+
 		<!-- Header -->
 		<header>
 			
-			<a href="reservialogo.png"><img src="images/logo/Webp.net-resizeimage(2).png" alt="Logo Reservia" /></a>
-			
 			<ul class= "navigation">
 				<div id="menu">
-					<li>Hébergements</li>
+					<li><a id="heb"href="#hebergement">Hébergements</a></li>
 				</div>
 				<div id="menu">
-					<li>Activités</li>
+					<li><a id="act" href="#activite">Activités</a></li>
 				</div>
-				<div id="menu">
+				<div id="inscription">
 					<li>S'inscrire</li>
 				</div>
 			</ul>
+			<div id = "logo">
+				<a href="#"><img src="images/logo/Webp.net-resizeimage(2).png" alt="Logo Reservia" /></a>
+			</div>
+		</header>
+
+		<!--Section 1 filtres-->	
 			<div class="container1">
 				<h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
 				<p>
 					En plein centre ville ou en pleine nature
 				</p>
-				<label for=""></label>
-				<input type = "search" placeholder="Paris,France" id= "Search">
-				<button type="submit">Rechercher</button>
-				<div class="Filtres">
+				<label id = "Recherche">
+					<input type = "search" placeholder="Paris,France" id= "Search">
+					<button type = "submit">Rechercher</button>
+				</label>
+				<div class = "Filtres">
 					<p>
 						Filtres
 					</p>
-					<button type="button">Economique</button>
-					<button type="button">Familliale</button>
-					<button type="button">Romantique</button><i class="fas fa-heart"></i>
-					<button type="button">Animaux autorisés</button>
+					<a href="#" class="button">
+						<div class="rond">
+						<i class="fas fa-money-bill-wave"></i>
+						</div>
+						<span>Economique</span>
+						
+					</a>
+					<a href="#" class="button">
+						<div class="rond">
+						<i class="fas fa-child"></i>
+						</div>
+						<span>Famillial</span>
+					</a>
+					<a href="#" class="button">
+						<div class="rond">
+						<i class="fas fa-heart"></i>
+						</div>
+						<span>Romantique</span>
+					</a>
+					
+					<a href="#" class="button">
+						<div class="rond">
+						<i class="fas fa-dog"></i>
+						</div>
+						<span>Animaux autorisés</span>
+					</a>
+					
 				</div>
-				<p>
-					Plus de 500 logements sont disponibles dans cette ville
-				</p>
+				<div class="logementsdispo"> 
+					<div class= "info">
+						<i class="fas fa-info fa-xs"></i>
+					</div>
+					<p>	Plus de 500 logements sont disponibles dans cette ville</p>
+				
+				</div>
 			</div>
-		</header>
-		<!-- Section 1 hebergement -->
+		
+		<!-- Section 2 hebergement -->
 		<section id="hebergement">
 			<div class="container2">
 				<h1>Hébergements à Marseille</h1>
@@ -55,12 +103,15 @@
 				<h1>Les plus populaires</h1>
 			</div>
 		</section>
-		<!-- Section 2 activité -->
+		
+		<!-- Section 3 activité -->
 		<section id="activite">
 			<div class="container4">
 				<h1>Activité à Marseille</h1>
 			</div>
 		</section>
+
+		<!--footer-->
 		<footer>
 			
 			<ul class="information">

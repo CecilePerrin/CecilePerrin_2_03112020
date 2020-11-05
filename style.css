@@ -6,17 +6,9 @@
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  margin-top: 5px;
 }
 
-
-
-/**
- * Render the `main` element consistently in IE.
- */
-
-main {
-  display: block;
-}
 
 /**========================general======================== **/
 
@@ -26,11 +18,12 @@ main {
  */
 
  body {
+  display: block; /** Render the `main` element consistently in IE.**/
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
 
-h1{
+h1,h2{
  font-size: medium;
  }
 
@@ -42,51 +35,151 @@ ul{
   list-style: none; 
 }
 
-h2{
-  font-size: medium;
-}
-
 /**========================header + menu========================**/
 
 .navigation{
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  float: right;
+  right: 0;
+  top: 0%;
+  margin-bottom : -3px;
+  position: fixed; /**épingler le menu**/
+  background-color: white;
+  height: 50px;
+  margin-top: 0px;
+  padding-top: 5px;
+  
 }
 
-
+#inscription{
+  color: #0065FC;
+  font-weight: bold;
+  margin-right: 60px;
+}
 #menu{
   
   margin-right: 60px; /**marge entre les bouttons de nav**/
+  
+}
+#act:link{
+  
+  color: #000;
+  text-decoration: none;
+  
+}
+#act:visited {
+  color: black;
 }
 
+#act:hover{
+  color: #0065FC ;
+  font-weight: 500;
+  
+}
+#heb:link{
+  
+  color: #000;
+  text-decoration: none;
+  
+}
+#heb:visited {
+  color: black;
+}
+
+#heb:hover{
+  color: #0065FC;
+  font-weight: 500;
+  
+}
+
+#logo img{
+  width: 5%;
+  margin-left: 2%;
+
+}
+/**========================section 1 filtres========================**/
 .container1{
-  margin-right: 1%;
-  margin-left: 1%; 
-  padding-left: 10px;
+  margin-top: 25px;
+  margin-right: 2%;
+  margin-left: 2%; 
+  padding-left: 5px;
   min-width: 1000px;
 }
 .Filtres{
- 
   display: flex;
+  margin-top: 25px;
+  font-weight: bold; 
 }
-.Eco{
-
-}
-.Fam{
-
-} 
-.Anim{
-
-}
-.Rom{
+.button{
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 20px; 
+  border: 1px solid silver;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-left: 10px;
   
 }
+.button span{
+  padding-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;  
+  
+}
+.rond{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.fa-money-bill-wave{
+  
+  color: #0065FC; 
+}
+.fa-child{
+
+  color: #0065FC;
+}
+
+.fa-heart{
+  
+  color: #0065FC
+}
+
+.fa-dog{
+
+  color: #0065FC
+}
+.button:hover{
+  background-color: #DEEBFF;
+}
+.button:active{
+  background-color: #0065FC;
+  
+}
+
+.logementdispo{
+  display: flex;
+  
+}
+
+
 /**========================section 2 hébergement========================**/
 #hebergement{
+
   display: flex;
-  
+  margin-right: 2%;
+  margin-left: 2%; 
+  padding-left: 10px;
+  width: 90%;
+  height: 400px;
+  margin-bottom: 50px;
 }
 
 .container2{
@@ -94,9 +187,10 @@ h2{
   margin-right: 1%;
   margin-left: 1%; 
   padding-left: 10px;
-  width: 60%;
+  width: 40%;
   height: 400px;
   margin-bottom: 50px;
+  border-radius: 15px;
 }
 .container3{
   background-color: #f2f2f2;
@@ -106,14 +200,15 @@ h2{
   width: 20%;
   height: 400px;
   margin-bottom: 50px;
+  border-radius: 15px;
 }
 
 
 /**========================section 3 activité========================**/
 .container4{
 
-  margin-right: 1%;
-  margin-left: 1%; 
+  margin-right: 2%;
+  margin-left: 2%; 
   padding-left: 10px;
   width: 90%;
   height: 400px;
