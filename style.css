@@ -21,11 +21,14 @@
   display: block; /** Render the `main` element consistently in IE.**/
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1400px;
 }
 
 h1,h2{
- font-size: medium;
- }
+ font-size: large;
+  }
 
 p{
  font-size: small;
@@ -39,27 +42,29 @@ ul{
 
 .navigation{
   display: flex;
-  flex-direction: row;
-  right: 0;
-  top: 0%;
-  margin-bottom : -3px;
-  position: fixed; /**épingler le menu**/
-  background-color: white;
+  justify-content: flex-end;
+  margin-bottom : -40px;
   height: 50px;
-  margin-top: 0px;
+  margin-top: 30px;
+  margin-right: 200px;
   padding-top: 5px;
-  
 }
 
-#inscription{
+#insc:link{
+
   color: #0065FC;
   font-weight: bold;
   margin-right: 60px;
+  text-decoration: none;
+}
+#insc:visited{
+
+ color: #0065FC; 
 }
 #menu{
   
   margin-right: 60px; /**marge entre les bouttons de nav**/
-  
+    
 }
 #act:link{
   
@@ -93,15 +98,13 @@ ul{
 }
 
 #logo img{
-  width: 5%;
-  margin-left: 2%;
-
+  
+  margin-left: 5%;
 }
 /**========================section 1 filtres========================**/
 .container1{
+  margin-left: 5%;
   margin-top: 25px;
-  margin-right: 2%;
-  margin-left: 2%; 
   padding-left: 5px;
   min-width: 1000px;
 }
@@ -109,6 +112,29 @@ ul{
   display: flex;
   margin-top: 25px;
   font-weight: bold; 
+}
+.Filtres p{
+  font-size: 14px;
+}
+
+.form-control input{
+  font-family:'Raleway', sans-serif; 
+  font-weight: bold;
+  color: #000;
+  border: 1px solid #f2f2f2;
+  padding: 9px;
+}
+
+.form-control button {
+  background-color: #0065FC;
+  border: none;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 15px;
+  
 }
 .button{
   display: flex;
@@ -138,24 +164,10 @@ ul{
   width: 40px;
   height: 40px;
 }
-.fa-money-bill-wave{
-  
+#icones_filtres{
   color: #0065FC; 
 }
-.fa-child{
 
-  color: #0065FC;
-}
-
-.fa-heart{
-  
-  color: #0065FC
-}
-
-.fa-dog{
-
-  color: #0065FC
-}
 .button:hover{
   background-color: #DEEBFF;
 }
@@ -166,54 +178,107 @@ ul{
 
 .logementdispo{
   display: flex;
+  height: 300px;
+  margin-top: 25px;
   
 }
+.infoicone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #0065FC;
+  border: 1px solid silver;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px; 
+  
+}
+.infotexte{
 
-
+  width: 400px;
+  margin-left: 2%;
+  margin-top: 2%;
+  }
 /**========================section 2 hébergement========================**/
 #hebergement{
-
-  display: flex;
-  margin-right: 2%;
-  margin-left: 2%; 
-  padding-left: 10px;
-  width: 90%;
-  height: 400px;
-  margin-bottom: 50px;
+  margin-left: 5%;
+  display: flex; 
+  
+  width: 1000px;
+  height: 550px;
+  margin-bottom: 10px;
 }
 
 .container2{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #f2f2f2;
   margin-right: 1%;
-  margin-left: 1%; 
   padding-left: 10px;
-  width: 40%;
-  height: 400px;
-  margin-bottom: 50px;
+  width: 70%;
+  height: 500px;
+  margin-top: 20px;
   border-radius: 15px;
 }
+.container2 .titrecontainer2{
+ position: absolute;
+ top: 5px;
+ left: 35px;
+  
+}
+
+#ligne_1{
+  display: flex;
+  justify-content: center;
+}
+#ligne_2{
+  display: flex; 
+  justify-content: center;
+}
+.sousbloc2{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  width: 190px;
+  height: 140px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 5px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(216, 213, 213);
+}
+.text_bloc2{
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+
 .container3{
   background-color: #f2f2f2;
   margin-right: 1%;
   margin-left: 1%; 
   padding-left: 10px;
-  width: 20%;
-  height: 400px;
+  width: 30%;
+  height: 500px;
   margin-bottom: 50px;
   border-radius: 15px;
+  margin-top: 20px;
 }
+
 
 
 /**========================section 3 activité========================**/
 .container4{
-
-  margin-right: 2%;
-  margin-left: 2%; 
+  margin-left: 5%;
   padding-left: 10px;
   width: 90%;
-  height: 400px;
+  height: 500px;
   margin-bottom: 50px;
-
+  
 }
 
 #activite{
@@ -225,15 +290,21 @@ footer{
   background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  position: relative; /**bloquer le footer en bas de la page**/
+  justify-content: center;
   bottom: 0px;
-  width:100%;
-
+  width: 100%;
+  
 }
 
 .information{
 
-  margin-right: 200px
- 
+  margin-right: 200px;
+    
+}
+.information li{
+  margin-bottom: 4%;
+}
+.information h2{
+  font-size: medium;
+  margin-bottom: 10%;
 }

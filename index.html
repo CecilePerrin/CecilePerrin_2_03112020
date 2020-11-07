@@ -5,7 +5,7 @@
 		<title>Reservia</title>
 		<link rel="shortcut icon" href="Reservia.ico">
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Site de reservation partout en France">
@@ -19,14 +19,10 @@
 		<meta name="twitter:title" content="Reservia">
 		<meta name="twitter:description" content="Site de reservation partout en France">
 		<meta name="twitter:image" content="http://www.CecilePerrin.github.io">
-	
-	
 	</head>
 	<body>
-
 		<!-- Header -->
 		<header>
-			
 			<ul class= "navigation">
 				<div id="menu">
 					<li><a id="heb"href="#hebergement">Hébergements</a></li>
@@ -35,98 +31,126 @@
 					<li><a id="act" href="#activite">Activités</a></li>
 				</div>
 				<div id="inscription">
-					<li>S'inscrire</li>
+					<li><a id="insc"href="#">S'inscrire</a></li>
 				</div>
 			</ul>
 			<div id = "logo">
 				<a href="#"><img src="images/logo/Webp.net-resizeimage(2).png" alt="Logo Reservia" /></a>
 			</div>
 		</header>
-
-		<!--Section 1 filtres-->	
-			<div class="container1">
-				<h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
-				<p>
-					En plein centre ville ou en pleine nature
-				</p>
+		<!--Section 1 filtres-->
+		<div class="container1">
+			<h1>Trouvez votre hébérgement pour des vacances de rêve</h1>
+			<p>
+				                    En plein centre ville ou en pleine nature                
+			</p>
+			<div class= "form-control">
 				<label id = "Recherche">
 					<input type = "search" placeholder="Paris,France" id= "Search">
 					<button type = "submit">Rechercher</button>
 				</label>
-				<div class = "Filtres">
-					<p>
-						Filtres
-					</p>
-					<a href="#" class="button">
-						<div class="rond">
-						<i class="fas fa-money-bill-wave"></i>
-						</div>
-						<span>Economique</span>
-						
-					</a>
-					<a href="#" class="button">
-						<div class="rond">
-						<i class="fas fa-child"></i>
-						</div>
-						<span>Famillial</span>
-					</a>
-					<a href="#" class="button">
-						<div class="rond">
-						<i class="fas fa-heart"></i>
-						</div>
-						<span>Romantique</span>
-					</a>
-					
-					<a href="#" class="button">
-						<div class="rond">
-						<i class="fas fa-dog"></i>
-						</div>
-						<span>Animaux autorisés</span>
-					</a>
-					
-				</div>
-				<div class="logementsdispo"> 
-					<div class= "info">
-						<i class="fas fa-info fa-xs"></i>
+			</div>
+			<div class = "Filtres">
+				<p>
+					                        Filtres                    
+				</p>
+				<a href="#" class="button">
+					<div class="rond">
+						<i id="icones_filtres" class="fas fa-money-bill-wave"></i>
 					</div>
-					<p>	Plus de 500 logements sont disponibles dans cette ville</p>
-				
+					<span>Economique</span>
+				</a>
+				<a href="#" class="button">
+					<div class="rond">
+						<i id="icones_filtres" class="fas fa-child"></i>
+					</div>
+					<span>Famillial</span>
+				</a>
+				<a href="#" class="button">
+					<div class="rond">
+						<i id="icones_filtres" class="fas fa-heart"></i>
+					</div>
+					<span>Romantique</span>
+				</a>
+				<a href="#" class="button">
+					<div class="rond">
+						<i id="icones_filtres" class="fas fa-dog"></i>
+					</div>
+					<span>Animaux autorisés</span>
+				</a>
+			</div>
+			<div class="logementsdispo">
+				<div class= "infoicone">
+					<i id="icones_filtres" class="fas fa-info fa-xs"></i>
+				</div>
+				<div class="infotexte">
+					<p>
+						 Plus de 500 logements sont disponibles dans cette ville
+					</p>
 				</div>
 			</div>
-		
+		</div>
 		<!-- Section 2 hebergement -->
 		<section id="hebergement">
 			<div class="container2">
-				<h1>Hébergements à Marseille</h1>
+				<div class= titrecontainer2>
+					<h1>Hébergements à Marseille</h1>
+				</div>
+				<div id="ligne_1">
+					<div class="sousbloc2">
+						<div class="text_bloc2" >
+							<span>Auberge la Cannebière</span>
+							<p>Nuit à partir de 25€</p>
+						</div>
+						<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo Reservia" />
+					</div>
+					<div class="sousbloc2">
+						<span>Hôtel du port</span>
+						<p>Nuit à partir de 52€</p>
+					</div>
+					<div class="sousbloc2">
+						<span>Hôtel les mouettes</span>
+						<p>Nuit à partir de 76€</p>
+					</div>
+				</div>
+				<div id="ligne_2">
+					<div class="sousbloc2">
+						<span>Hôtel de la mer</span>
+						<p>Nuit à partir de 46€</p>
+					</div>
+					<div class="sousbloc2">
+						<span>Auberge Le Panier</span>
+						<p>Nuit à partir de 23€</p>
+					</div>
+					<div class="sousbloc2">
+						<span>Hôtel chez Amina</span>
+						<p>Nuit à partir de 96€</p>
+					</div>
+				</div>
 			</div>
 			<div class="container3">
 				<h1>Les plus populaires</h1>
 			</div>
 		</section>
-		
 		<!-- Section 3 activité -->
 		<section id="activite">
 			<div class="container4">
 				<h1>Activité à Marseille</h1>
 			</div>
 		</section>
-
 		<!--footer-->
 		<footer>
-			
 			<ul class="information">
 				<li><h2>A propos</h2></li>
 				<li>fonctionnement du site</li>
 				<li>Conditions générales de vente</li>
 				<li>donnée et confidentialité</li>
 			</ul>
-			
 			<ul class="information">
 				<li><h2>Nos hébergements</h2></li>
 				<li>Charte qualité</li>
 				<li>Soumettre votre hôtel</li>
 			</ul>
-			
 			<ul class="information">
 				<li><h2>Assistance</h2></li>
 				<li>Centre d'aide</li>
@@ -135,3 +159,4 @@
 		</footer>
 	</body>
 </html>
+
