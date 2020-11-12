@@ -28,6 +28,7 @@
 
 h1,h2{
  font-size: large;
+ 
   }
 
 p{
@@ -37,7 +38,20 @@ p{
 ul{
   list-style: none; 
 }
+i{
+  color: #0065FC; 
+}
+a{
+  color: black;
+  text-decoration: none;
+}
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 /**========================header + menu========================**/
 
 .navigation{
@@ -45,69 +59,62 @@ ul{
   justify-content: flex-end;
   margin-bottom : -40px;
   height: 50px;
-  margin-top: 30px;
-  margin-right: 200px;
-  padding-top: 5px;
+  margin-top: 0px;
+  margin-right: 110px;
 }
-
-#insc:link{
-
-  color: #0065FC;
-  font-weight: bold;
+.heb{
+  display: flex;
+  flex-direction: column-reverse;
   margin-right: 60px;
-  text-decoration: none;
-}
-#insc:visited{
-
- color: #0065FC; 
-}
-#menu{
-  
-  margin-right: 60px; /**marge entre les bouttons de nav**/
-    
-}
-#act:link{
-  
-  color: #000;
-  text-decoration: none;
-  
-}
-#act:visited {
-  color: black;
+ 
 }
 
-#act:hover{
-  color: #0065FC ;
-  font-weight: 500;
-  
-}
-#heb:link{
-  
-  color: #000;
-  text-decoration: none;
-  
-}
-#heb:visited {
-  color: black;
-}
-
-#heb:hover{
+.heb:hover{
+  border-top: #0065FC solid 2px;
   color: #0065FC;
-  font-weight: 500;
-  
+
+}
+.act{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 60px;
+}
+.act:hover {
+  border-top: #0065FC solid 2px;
+  color: #0065FC;
 }
 
-#logo img{
-  
+
+#inscription{
+  display: flex;
+  flex-direction: column-reverse;
+  font-weight: bolder;
+  margin-right: 50px;
+}
+
+#inscription a{
+  color: #0065FC;
+}
+#inscription:hover{
+  border-top: #0065FC solid 2px;
+}
+li :hover{
+  color: #0065FC;
+}
+#logo img{ 
   margin-left: 5%;
 }
-/**========================section 1 filtres========================**/
+
+
+/**========================section 1 search + field=======================**/
 .container1{
   margin-left: 5%;
   margin-top: 25px;
   padding-left: 5px;
   min-width: 1000px;
 }
+
+
 .Filtres{
   display: flex;
   margin-top: 25px;
@@ -117,71 +124,100 @@ ul{
   font-size: 14px;
 }
 
+.form-control{
+  display: flex;
+  
+}
 .form-control input{
+  all: unset;
   font-family:'Raleway', sans-serif; 
+  font-size: smaller;
   font-weight: bold;
   color: #000;
   border: 1px solid #f2f2f2;
   padding: 9px;
-}
 
+}
+.form-control i{ 
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 0px 0px 10px ;
+  background-color: #f2f2f2;
+  height: 39px;
+  width: 39px;
+}
 .form-control button {
+  all: unset;
+  cursor: pointer;
+  font-family:'Raleway', sans-serif; 
+  font-size: small;
+  font-weight: bold;
   background-color: #0065FC;
-  border: none;
   color: white;
   border-radius: 0px 10px 10px 0px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   padding: 9px 15px;
-  
 }
-.button{
+
+.form-control button:active{
+  background-color: #DEEBFF;
+  color: #0065FC;
+}
+
+.choice{
+  transition: background-color 0.5s ease;
   display: flex;
   align-items: center;
   padding-left: 0px;
   padding-right: 20px; 
-  border: 1px solid silver;
+  border: 1px solid rgb(212, 212, 212);
   border-radius: 50px;
   text-decoration: none;
   margin-right: 10px;
   margin-left: 10px;
-  
+    
 }
-.button span{
+.choice span{
   padding-left: 10px;
-  color: black;
   font-weight: bold;
   font-size: 14px;  
   
 }
-.rond{
+.choice i{
   display: flex;
-  justify-content: center;
+  position: relative;
+  justify-content: center; 
   align-items: center;
   background-color: #DEEBFF;
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
-}
-#icones_filtres{
-  color: #0065FC; 
+  width: 43px;
+  height: 43px;
+  left: -1px;
 }
 
-.button:hover{
+.choice:hover{
   background-color: #DEEBFF;
 }
-.button:active{
+.choice:active{
   background-color: #0065FC;
-  
+  color:white;
+  border: none;
+
 }
 
+
+/**========================logements disponible info========================**/
 .logementdispo{
   display: flex;
+  text-align: center;
   height: 300px;
   margin-top: 25px;
-  
 }
+
 .infoicone{
   display: flex;
   justify-content: center;
@@ -191,21 +227,21 @@ ul{
   border: 1px solid silver;
   border-radius: 100%;
   width: 20px;
-  height: 20px; 
-  
+  height: 20px;  
+  top: 286px
 }
-.infotexte{
 
+.infotexte{
   width: 400px;
   margin-left: 2%;
   margin-top: 2%;
   }
+
 /**========================section 2 hébergement========================**/
 #hebergement{
   margin-left: 5%;
-  display: flex; 
-  
-  width: 1000px;
+  display: flex;  
+  width: 1200px;
   height: 550px;
   margin-bottom: 10px;
 }
@@ -217,94 +253,269 @@ ul{
   align-items: center;
   justify-content: center;
   background-color: #f2f2f2;
-  margin-right: 1%;
-  padding-left: 10px;
-  width: 70%;
+  margin-right: 15px;
+  padding-top: 20px;
+  width: 65%;
   height: 500px;
   margin-top: 20px;
   border-radius: 15px;
 }
-.container2 .titrecontainer2{
+.container2 h2{
  position: absolute;
- top: 5px;
- left: 35px;
-  
+ top: 13px;
+ left: 34px;  
 }
-
-#ligne_1{
+ .container2 h3{
+  position: absolute;
+  font-size: 14px;
+  bottom: 20px;
+  left: 40px;  
+}
+#ligne_1, #ligne_2{
   display: flex;
   justify-content: center;
 }
-#ligne_2{
-  display: flex; 
-  justify-content: center;
-}
+
 .sousbloc2{
   display: flex;
   flex-direction: column-reverse;
   background-color: white;
-  width: 190px;
-  height: 140px;
+  width: 210px;
+  height: 170px;
   margin-bottom: 30px;
-  margin-left: 10px;
-  margin-right: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 15px;
   box-shadow: 3px 3px 3px rgb(216, 213, 213);
 }
+
 .text_bloc2{
-  background-color: white;
-  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;  
+  margin-top: 5px;
+}
+.text_bloc2 p{
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.text_bloc2 span{
+  font-weight: bold;
+  margin-bottom: 4.5px;
+  font-size: 15px;
+}
+.sousbloc2 img{
   overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+  margin: 4px 4px 4px 4px;
+  background-size: cover ;   
 }
 
 .container3{
+  display: flex;
+  flex-direction: column;
+  position: relative;  
   background-color: #f2f2f2;
-  margin-right: 1%;
-  margin-left: 1%; 
-  padding-left: 10px;
-  width: 30%;
+  margin-right: 10px;
+  margin-left: 15px; 
+  padding-top: 20px;
+  width: 32%;
   height: 500px;
-  margin-bottom: 50px;
   border-radius: 15px;
   margin-top: 20px;
 }
 
+.container3 h2{
+  display: flex;
+  position: relative;
+  top:-9px;
+  left: 25px;
+}
+ .container3 h2 i{
+  margin-left: 140px;
+  color: #000;
+ }
+
+.sousbloc3{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-color: white;
+  width: 320px;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(216, 213, 213);
+}
+
+.sousbloc3 img{
+  overflow: hidden;
+  border-radius: 15px 0px 0px 15px;
+  margin: 3.5px 3.5px 3.5px 3.5px; 
+  width: 140px;
+  height: 108px;
+}
 
 
-/**========================section 3 activité========================**/
-.container4{
-  margin-left: 5%;
-  padding-left: 10px;
-  width: 90%;
-  height: 500px;
-  margin-bottom: 50px;
+.text_bloc3{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin-left: 15px;  
+  margin-top: 10px;
   
 }
-
-#activite{
-
+.text_bloc3 p{
+  margin-top: 4.5px;
+  margin-bottom: 0.5px;
 }
+.text_bloc3 span{
+  font-weight: bold;
+  font-size: 15px;
+}
+ .starscontainer{
+  display: flex;
+  margin-top: 4.5px;
+  height: 20px;
+  width: 100px;
+  font-size: 0.75em;
+  }
+
+.starscontainer3{
+  display: flex;
+  margin-top: 30px;
+  height: 20px;
+  width: 100px;
+  font-size: 0.75em;
+}
+
+ #ligne_1 .sousbloc2:first-child .starscontainer i:nth-child(5){
+   color: #f2f2f2;
+ }
+ #ligne_1 .sousbloc2:last-child .starscontainer i:nth-child(5){
+  color: #f2f2f2;
+} 
+#ligne_2 .sousbloc2:first-child .starscontainer i:nth-child(4){
+  color: #f2f2f2;
+}
+#ligne_2 .sousbloc2:first-child .starscontainer i:nth-child(5){
+  color: #f2f2f2;
+}
+#ligne_2 .sousbloc2:nth-child(2) .starscontainer i:nth-child(5){
+  color: #f2f2f2;
+}
+
+.sousbloc3:nth-child(2n+1) .starscontainer3 i:nth-child(5){
+  color: #f2f2f2;
+}
+.sousbloc3:last-child .starscontainer3 i:nth-child(5){
+  color: #f2f2f2;
+}
+/**========================section 3 activité========================**/
+#activite{
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 500px;
+  margin-bottom: 10px; 
+}
+
+#activite h2{
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.largebloc{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 75%;
+  width: 22%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px rgb(216, 213, 213);
+}
+.largebloc img{
+  position: relative;
+  left: 0px;
+}
+.firstbloc{
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 22%;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 15px;
+}
+
+.smalbloc{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  width: 100%;
+  height: 55%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(216, 213, 213);
+}
+.smalbloc:nth-child(2){
+  
+  width: 100%;
+  height: 37%;
+  margin-top: 30px;
+ 
+}
+
+.smalbloc p{
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.smalbloc h3{
+  font-weight: bold;
+  font-size: 15px;
+}
+.smalbloc img{
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+  background-size: cover ;   
+}
+ .secondbloc{
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 22%;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 15px;
+}
+
+
 
 /**========================Footer========================**/
 footer{
   background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   bottom: 0px;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 .information{
-
-  margin-right: 200px;
-    
+  margin-right: 250px ;
 }
+
 .information li{
   margin-bottom: 4%;
 }
+
 .information h2{
   font-size: medium;
   margin-bottom: 10%;
 }
+
