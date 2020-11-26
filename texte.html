@@ -5,11 +5,10 @@
 		<title>Reservia</title>
 		<link rel="shortcut icon" href="Reservia.ico">
 		<link rel="stylesheet" type="text/css" href="Phone.css" />
-		<link rel="stylesheet" media="screen and (min-width: 500px) and (max-width:767px)" href="500px.css"/>
-		<link rel="stylesheet" media="screen and (min-width:768px)" href="tablette.css"/>
-		<Link rel="stylesheet" media="screen and (orientation: landscape)" href="Landscape.css"/>
-		<link rel="stylesheet" media="screen and (min-width: 769px) and (max-width:1399px)" href="769px.css"/>
-		<link rel="stylesheet" media="screen and (min-width:1400px)" href="Desktop.css"/>
+		<link rel="stylesheet" media="screen and (min-width: 500px) and (max-width:956px)" href="Responsive/500px.css"/>
+		<link rel="stylesheet" media="screen and (min-width:768px)" href="Responsive/tablette.css"/>
+		<link rel="stylesheet" media="screen and (min-width: 957px) and (max-width:1399px)" href="Responsive/769px.css"/>
+		<link rel="stylesheet" media="screen and (min-width:1400px)" href="Responsive/Desktop.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="Assets/fonts/fontawesome/css/all.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,6 @@
 		<meta property="og:title" content="Reservia"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:url" content="http://www.CecilePerrin.github.io/"/>
-		<meta property="og:image" content="http://example.com/image.jpg"/>
 		<meta property="og:description" content="Site de reservation partout en France"/>
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Reservia">
@@ -28,29 +26,17 @@
 	<body>
 		<div class="container">
 			<header>
-				<div id="nav-container-desktop" class="space-between">
-					<div>
+				<div id="nav-container">
+					<div class="top-page flex">
 						<a href="#"><img src="Assets/images/logo/Webp.net-resizeimage(2).png" alt="Logo Reservia" /></a>
-					</div>
-					<nav>
-						<ul class = "navigation flex space-between ">
-							<li class = "nav-link block " ><a class="padding20" href="#hebergement">Hébergements</a></li>
-							<li class = "nav-link block " ><a class="padding20" href = "#activite">Activités</a></li>
-							<li class="inscription block "><a  href = "#">S'inscrire</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div id="nav-container-mobile">
-					<div class="top-page flex space-between">
-						<a href="#"><img src="Assets/images/logo/Webp.net-resizeimage(2).png" alt="Logo Reservia" /></a>
-						<div class="inscription padding20">
+						<div class="inscription">
 							<a href = "#">S'inscrire</a>
 						</div>
 					</div>
 					<nav>
 						<ul class = "navigation flex ">
-							<li class = "nav-link block width50 text-center" ><a class="padding20 width100 block" href="#hebergement">Hébergements</a></li>
-							<li class = "nav-link block width50 text-center" ><a class="padding20 width100 block" href = "#activité-Phone">Activités</a></li>
+							<li class = "nav-link" ><a  href= "#hebergement">Hébergements</a></li>
+							<li class = "nav-link" ><a  href = "#activity">Activités</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -116,11 +102,11 @@
 									<strong>128€</strong>
 								</p>
 								<div class="starscontainer3">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
+									<i class="fas fa-star StarIcon" data-active="true"></i>
+									<i class="fas fa-star StarIcon" data-active="true"></i>
+									<i class="fas fa-star StarIcon" data-active="true"></i>
+									<i class="fas fa-star StarIcon" data-active="true"></i>
+									<i class="fas fa-star StarIcon" data-active="false"></i>
 								</div>
 							</div>
 							<img src="Assets/images/hebergements/3_medium/Hotel-le-soleil-du-matin.jpg" alt="Hôtel le soleil du matin" />
@@ -132,7 +118,7 @@
 								<span>Au coeur de l'eau Chambres d'hôtes</span>
 								<p>
 									                                    Nuit à partir de                                     
-									<strong>128€</strong>
+									<strong>71€</strong>
 								</p>
 								<div class="starscontainer3">
 									<i class="fas fa-star"></i>
@@ -151,7 +137,7 @@
 								<span>Hôtel tout bleur et Blanc</span>
 								<p>
 									                                    Nuit à partir de                                     
-									<strong>128€</strong>
+									<strong>68€</strong>
 								</p>
 								<div class="starscontainer3">
 									<i class="fas fa-star"></i>
@@ -288,68 +274,37 @@
 					<h3 class="More">Afficher plus</h3>
 				</div>
 			</section>
-			<!-- Section 3 activité -->
-			<section id="activite">
+			<section id="activity">
 				<h2>Activité à Marseille</h2>
-				<a  href="#" class="largebloc">
-					<h3>vieux port</h3>
+				<a href="#" class="smalbloc largecard">
+					<h3>Vieux port</h3>
 					<img src="Assets/images/activites/4_small/Vieuxport.jpg" alt="Vieux Port" />
 				</a>
-				<div class="firstbloc">
-					<a href="#" class="smalbloc" id="height">
-						<h3>Fort de Pomègues</h3>
-						<img src="Assets/images/activites/4_small/FortdePomègues.jpg" alt="Fort de Pomègues" />
-					</a>
-					<a href="#" class="smalbloc">
-						<h3>Îles de Frioul</h3>
-						<img src="Assets/images/activites/4_small/ilesfrioul.jpg" alt="Îles de Frioul" />
-					</a>
-				</div>
-				<div class="largebloc">
-					<h3>Parc National des calanques</h3>
-					<img src="Assets/images/activites/4_small/parcnatdescalangues.jpg" alt="Parc National des calanques" />
-				</div>
-				<div class="secondbloc">
-					<div class="smalbloc">
-						<h3>Notre-Dame-de-la-Garde</h3>
-						<img src="Assets/images/activites/4_small/notredame.jpg" alt="Notre-Dame-de-la-Garde" />
-					</div>
-					<div class="smalbloc">
-						<h3>Parc Longchamps</h3>
-						<img src="Assets/images/activites/4_small/Parclongchamp.jpg" alt="Parc Longchamps" />
-					</div>
-				</div>
-			</section>
-			<section id="activité-Phone">
-				<h2>Activité à Marseille</h2>
-				<a href="#" class="smalbloc">
-					<h3>vieux port</h3>
-					<img src="Assets/images/activites/4_small/Vieuxport.jpg" alt="Vieux Port" />
-				</a>
-				<a href="#" class="smalbloc">
+				<a href="#" class="smalbloc card1">
 					<h3>Fort de Pomègues</h3>
 					<img src="Assets/images/activites/4_small/FortdePomègues.jpg" alt="Fort de Pomègues" />
 				</a>
-				<a href="#" class="smalbloc">
+				<a href="#" class="smalbloc card2">
 					<h3>Îles de Frioul</h3>
 					<img src="Assets/images/activites/4_small/ilesfrioul.jpg" alt="Îles de Frioul" />
 				</a>
-				<a href="#" class="smalbloc">
+				<a href="#" class="smalbloc largecard">
 					<h3>Parc National des calanques</h3>
 					<img src="Assets/images/activites/4_small/parcnatdescalangues.jpg" alt="Parc National des calanques" />
 				</a>
-				<a href="#" class="smalbloc">
+				<a href="#" class="smalbloc card3">
 						<h3>Notre-Dame-de-la-Garde</h3>
 						<img src="Assets/images/activites/4_small/notredame.jpg" alt="Notre-Dame-de-la-Garde" />
 				</a>
-				<a href="#"class="smalbloc">
+				<a href="#" class="smalbloc card4">
 						<h3>Parc Longchamps</h3>
 						<img src="Assets/images/activites/4_small/Parclongchamp.jpg" alt="Parc Longchamps" />
 				</a>
 				
 			</section>
+		</div>
 			<!--footer-->
-			<footer class="padding20">
+			<footer>
 				<ul class="information">
 					<li><h3>A propos</h3></li>
 					<li>fonctionnement du site</li>
@@ -367,7 +322,7 @@
 					<li>Nous contacter</li>
 				</ul>
 			</footer>
-		</div>
+		
 	</body>
 </html>
 

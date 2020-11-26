@@ -1,6 +1,6 @@
 @media screen 
 and (min-width: 500px)
-and (max-width:767px){
+and (max-width:956px){
   
     .container
 	{
@@ -25,6 +25,10 @@ and (max-width:767px){
         justify-items: center;
 
     }
+
+    .container3 h2{
+        margin-left: 50px;
+    }
     .sousbloc3{
         width: 400px;
         justify-content: left;
@@ -40,12 +44,12 @@ and (max-width:767px){
 
     }
     .container2 h2{
-        margin-left: 0px;
+       margin-left: 20px;
     }
     .sousbloc2{
        width: 400px;
     }
-    #activité-Phone{
+    #activity{
         display: grid;
         justify-items: center;
     }

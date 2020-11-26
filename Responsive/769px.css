@@ -1,5 +1,5 @@
 @media screen 
-and (min-width: 769px)
+and (min-width: 957px)
 and (max-width:1399px)
 
 {
@@ -42,7 +42,7 @@ and (max-width:1399px)
 	}
 
 	.container2
-	{
+	{ 
 		display: grid;
 		width: auto;
 		justify-content: center;
@@ -68,34 +68,40 @@ and (max-width:1399px)
 	}
 
 	.sousbloc2
-	{
-		width: 230px;
-	}
-
-
-
-	.sousbloc2
-	{
+	{  
+		flex-shrink: 2;
 		margin-right: 30px;
 		width: 260px;
+			
 	}
 
-	#activité-Phone
+	#activity
 	{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
 
-	#activité-Phone h2
+	#activity h2
 	{
 		width: 100%;
-		margin-left: 120px;
+		margin-left: 40px;
 	}
 
 	.smalbloc
 	{	
 		margin-right: 100px;
 		width: 30%;
+	}
+
+	footer
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		
+	}
+	.information{
+		margin-right: 150px;
 	}
 }

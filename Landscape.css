@@ -1,8 +1,0 @@
-@media screen and (orientation: landscape){
-   footer{
-     display: flex;
-   } 
-   .information{
-       margin-right: 150px
-   }
-}

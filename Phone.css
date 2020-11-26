@@ -1,15 +1,17 @@
 
 /**============= Elements similaires ============**/
 body,html
-{
+{	
+	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 
 .container
 {
 	margin:0;
-	font-family: 'Raleway', sans-serif;
+	padding: 0;
 	overflow-x: hidden;
 }
 
@@ -38,74 +40,30 @@ h3{
 margin-left : 20px;
 }
 
-
-/**===========================règles===============================**/
-.text-center
-{
-	text-align: center;
-}
-
-.width50
-{
-	width: 50%;
-}
-
-.width100
-{
-	width: 100%;
-}
-
-.padding20
-{
-	padding: 20px;
-}
-
 .flex
 {
 	display: flex;
 }
 
-.center
-{
-	justify-content: center;
-}
-
-.space-between
-{
-	justify-content: space-between;
-}
-
-.space-around
-{
-	justify-content: space-around;
-}
-
-.flex-end
-{
-	justify-content: flex-end;
-}
-
-.m10
-{
-	margin: 10px;
-}
-
-.block
-{
-	display: block;
-}
-
 /**====================================phone header===========================================**/
 .top-page
 {
-padding: 40px 20px 0px 20px}
+	justify-content: space-between;
+	padding: 40px 20px 0px 20px}
 
 .nav-link a
-{
+{ 	
+	width: 100%;
+	display: block;
+	padding: 20px;
 	border-bottom: #f2f2f2 3px solid;
 	font-size: 19px;
 }
-
+nav li{
+	display: block;
+	text-align: center;
+	width: 50%;
+}
 .nav-link :focus
 {
 	border-bottom: #0065FC 3px solid;
@@ -114,6 +72,7 @@ padding: 40px 20px 0px 20px}
 .inscription
 {
 	font-weight: bold;
+	padding: 20px
 }
 
 .inscription a
@@ -122,12 +81,7 @@ padding: 40px 20px 0px 20px}
 	font-size: 19px;
 }
 
-#nav-container-desktop
-{
-	display: none;
-}
-
-#nav-container-mobile
+#nav-container
 {
 	display: block;
 }
@@ -421,29 +375,24 @@ padding: 40px 20px 0px 20px}
 	margin-bottom: 15px;
 	font-size: 0.75em;
 }
-.starscontainer i:nth-child(5){
-	color: silver;
+.StarIcon [data-active=false] {
+	color:#f2f2f2
 }
-.starscontainer3 i:nth-child(5){
-		color: silver;
-}
+
 /**=========================ACTIVITES========================**/
-#activité-Phone
+#activity
 {
 	margin-bottom: 10px;
 	margin-top: 50px;
 }
 
-#activite
-{
-	display: none;
-}
 
-#activité-Phone h2
+#activity h2
 {
 	margin-top: 20px;
 	margin-left: 20px;
 	margin-bottom: 30px;
+	width: 100%;
 }
 
 .smalbloc
@@ -491,6 +440,7 @@ padding: 40px 20px 0px 20px}
 /**=========================footer===================**/
 footer
 {
+	padding: 20px;
 	background-color: #f2f2f2;
 	bottom: 0px;
 	width: 100%;
