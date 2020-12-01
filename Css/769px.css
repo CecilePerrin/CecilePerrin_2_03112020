@@ -27,7 +27,7 @@ and (max-width:1399px)
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
-		justify-content: left;
+		justify-content: center;
 	}
 
 	.container3 h2
