@@ -95,7 +95,9 @@ nav li {
 .search-desktop {
     display: none;
 }
-
+#button-text{
+    display: none;
+}
 .search input {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -234,7 +236,8 @@ nav li {
 }
 
 .container2 h2 {
-    margin-left: 20px;
+    text-align: center;
+
 }
 
 .sousbloc2 {
@@ -355,8 +358,8 @@ nav li {
 }
 
 #activity h2 {
+    text-align: center;
     margin-top: 20px;
-    margin-left: 20px;
     margin-bottom: 30px;
     width: 100%;
 }

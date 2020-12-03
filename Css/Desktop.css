@@ -51,54 +51,34 @@
         padding-left: 20px;
     }
     /**====================================search field===================================**/
-    .search {
+    .search #loupe {
         display: none;
     }
-    .search-desktop {
-        display: flex;
-    }
-    .search-desktop input {
-        font-family: 'Raleway', sans-serif;
-        font-size: smaller;
-        font-weight: bold;
-        color: #000;
-        border: 1px solid #f2f2f2;
-        padding: 9px;
-    }
-    .search-desktop .marker {
-        display: flex;
-        color: black;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px 0px 0px 10px;
-        background-color: #f2f2f2;
-        height: 45px;
-        width: 45px;
-    }
-    .search-desktop button {
-        border: none;
-        cursor: pointer;
+    .search button {
+
         font-family: 'Raleway', sans-serif;
         font-size: small;
         font-weight: bold;
-        background-color: #0065FC;
         color: white;
         border-radius: 0px 14px 14px 0px;
         text-align: center;
         text-decoration: none;
         padding: 1px 15px;
     }
-    .search-desktop button:active {
+    .search button:active {
         background-color: #DEEBFF;
         color: #0065FC;
     }
-    .search-desktop button:focus {
+    .search button:focus {
         outline: none;
     }
-    .search-desktop input:focus {
+    .search input:focus {
         outline: none;
+    } 
+    #button-text{
+        display: flex;
     }
+    
     .Filtres {
         display: flex;
     }
@@ -114,13 +94,14 @@
     }
     .container2 {
         /**Hébergement-marseille**/
-        flex-direction: column;
         background-color: #f2f2f2;
         border-radius: 15px;
         padding: 0px 15px 0px 15px
     }
     .container2 h2 {
         margin-bottom: 20px;
+        text-align: left;
+        margin-left: 20px;
     }
     .container2 h3 {
         margin-bottom: 40px;
@@ -168,7 +149,7 @@
         grid-row-gap: 15px
     }
     #activity h2 {
-        margin-left: 0px;
+        text-align: left;
         grid-column: 1/-1;
     }
     .smalbloc {
@@ -208,7 +189,6 @@
     }
     footer {
         display: flex;
-        flex-direction: row;
         justify-content: center;
     }
     .information {
