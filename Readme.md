@@ -1,5 +1,5 @@
-[![forthebadge](httpsforthebadge.comimagesbadgesuses-html.svg)](httpsforthebadge.com)
-[![forthebadge](httpsforthebadge.comimagesbadgesuses-css.svg)](httpsforthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 
 # CecilePerrin_2_03112020
 
@@ -25,7 +25,7 @@ Maquette site web Reservia- Deuxième projet du parcours Développeur Web sur Op
      
      
      
-     ![alt text](httpsuser.oc-static.comupload202008241598262857804_Maquette%20reservia-min.png)
+     ![alt text](https://user.oc-static.com/upload/2020/08/24/1598262857804_Maquette%20reservia-min.png)
 
   - Fonctionnalités
   
