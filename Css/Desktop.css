@@ -30,7 +30,12 @@
         margin-left: 35px;
         border-bottom: none;
     }
-    .nav-link :focus {
+  
+    .nav-link :hover {
+        border-top: #0065FC 3px solid;
+        border-bottom: none;
+    }
+    .nav-link :active{
         border-top: #0065FC 3px solid;
         border-bottom: none;
     }
